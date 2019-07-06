@@ -72,7 +72,9 @@ jobs:
           command: dockerize -wait tcp://localhost:5432
       - run:
           name: Setup DB
-          command: bundle exec rails db:create db:schema:load
+          command: |
+           cp config/database.yml.ci config/database.yml
+           bundle exec rails db:create db:schema:load
       - run:
           name: Install Chromedriver latest version
           command: |
