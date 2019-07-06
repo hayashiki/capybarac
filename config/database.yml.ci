@@ -3,6 +3,13 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+development:
+  <<: *default
+  database: capybarac_development
+  host: localhost
+  username: postgres
+  port: <%= ENV.fetch('DB_PORT', '45432') %>
+
 test:
   <<: *default
   database: capybarac_test
