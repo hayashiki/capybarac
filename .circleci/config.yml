@@ -93,7 +93,7 @@ jobs:
                               -o ~/rspec/rspec.xml \
                               -- ${TESTFILES}
       - store_test_results:
-          path: ~/rspec
+          path: tmp/test-results
 
       - store_artifacts:
           path: tmp/capybara
