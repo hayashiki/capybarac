@@ -1,5 +1,8 @@
-# README
+# Capybarac
 
-- [] Webpacker
-- [] Circle.ci config
-- [] Simple Cov
+Circle.CI with Capybara
+
+- [-] Setup Webpacker
+- [-] Setup Circle.ci config
+- [ ] Run Simple Cov
+- [ ] Run Rubocop
