@@ -4,6 +4,6 @@ RSpec.describe 'home page' do
   it 'returns 200 HTTP status' do
     visit '/'
     expect(page).to have_http_status('200')
-    expect(page).to have_content("Top#home")
+    expect(page).to have_content('Top#home')
   end
 end
