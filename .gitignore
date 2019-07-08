@@ -8,7 +8,8 @@
 /.bundle
 
 config/database.yml
-
+coverage/
+ref.md
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*

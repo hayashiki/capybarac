@@ -9,9 +9,12 @@ require 'rspec/rails'
 require 'capybara/rspec'
 require 'capybara-screenshot/rspec'
 require 'capybara/rails'
+require 'simplecov'
 
-Capybara.save_path = ENV.fetch('CIRCLE_ARTIFACTS', Rails.root.join('tmp/capybara')).to_s
-Capybara::Screenshot.prune_strategy = { keep: 20 }
+SimpleCov.start 'rails' do
+  add_filter 'app/channels/application_cable/channel.rb'
+  add_filter 'app/channels/application_cable/connection.rb'
+end
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
