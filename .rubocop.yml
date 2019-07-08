@@ -35,7 +35,7 @@ Documentation:
   Enabled: false
 
 LineLength:
-  Max: 150
+  Max: 130
 
 MethodLength:
   CountComments: false
@@ -93,9 +93,6 @@ Style/PercentLiteralDelimiters:
 Naming/VariableNumber:
   Enabled: false
 
-Performance/RegexpMatch:
-  Enabled: false
-
 Style/UnneededPercentQ:
   Enabled: false
 
@@ -114,9 +111,6 @@ Style/ClassAndModuleChildren:
 Style/AndOr:
   Exclude:
     - '**/*controller.rb'
-
-Rails:
-  Enabled: true
 
 Bundler/OrderedGems:
   Enabled: false
